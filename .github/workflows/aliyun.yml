@@ -70,7 +70,8 @@ jobs:
           TARGET: ${{ env.DEPLOY_PATH }}
           #EXCLUDE: "/dist/, /node_modules/"#
           SCRIPT_BEFORE: |
-            ls -a /home/runner/work/hello-world/hello-world
+            pwd
+            ls -a /
           # SCRIPT_AFTER: |
           #   ls -a
           #   echo $RSYNC_STDOUT
