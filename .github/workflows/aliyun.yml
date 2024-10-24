@@ -10,7 +10,7 @@ on:
   #     - main
 
 env:
-  NODE_VERSION: '18'
+  NODE_VERSION: '20'
   BUILD_DIR: ${{ vars.BUILD_DIR }}
   DEPLOY_USER: ${{ vars.USER }}
   DEPLOY_SERVER: ${{ secrets.SERVER }}
