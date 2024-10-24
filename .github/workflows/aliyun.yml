@@ -64,7 +64,7 @@ jobs:
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: '-rlgoDzvc -i'
-          SOURCE: 'dist/'
+          SOURCE: '/'
           REMOTE_HOST: ${{ env.DEPLOY_SERVER }}
           REMOTE_USER: ${{ env.DEPLOY_USER }}
           TARGET: ${{ env.DEPLOY_PATH }}
@@ -73,9 +73,9 @@ jobs:
             echo "🌟🌟Checking current directory...🌟🌟"
             pwd
             echo "Listing contents of the working directory..."
-            ls -la /home/runner/work/hello-world/hello-world
+            ls -la /home/runner/work/hello-world
             echo "Listing contents of the dist directory..."
-            ls -la /home/runner/work/hello-world/hello-world/dist
+            ls -la /home/runner/work/hello-world/dist
             echo "🌟🌟Checking current directory complete🌟🌟"
           # SCRIPT_AFTER: |
           #   ls -a
